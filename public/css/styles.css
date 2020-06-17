@@ -1,6 +1,6 @@
 body
 {
-    color: #61580c;
+    background-color: rgb(223, 84, 223);
     font-family: arial;
     max-width: 650px;
     margin: 0 auto;
@@ -19,17 +19,17 @@ body
 footer
 {
     
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #7c7677;
     margin-top:16px ;
     padding: 0;
-    color: "black";
+    color: rgba(0, 0, 0, 0.973);
 }
 header
 {
     margin-top: 16px;
     margin-bottom: 48px;
-    font-size: 30px;
-    color: yellow;
+    font-size: 36px;
+    color: rgb(28, 61, 99);
 }
 
 h1
@@ -37,27 +37,35 @@ h1
     font-size: 64px;
     margin-bottom: 16px;
 }
-
+header div
+{
+    background-color: rgb(13, 145, 221);
+    text-align: center;
+}
 header a
 {
-    color: #888888;
+    
+    color: #f80202;
     margin-right: 16px;
     text-decoration: none;
 }
 .portrait{
-    width: 250px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
 }
 
 input{
-    border: 1px solid #cccccc;
+    
+    border: 5px solid #cccccc;
     padding: 8px;
+    font-size:25px;
 }
 
 button{
     cursor: pointer;
-    border: 1px solid #888888;
+    border: 5px solid #888888;
     background: green;
     color: white;
-    padding: 8px;
+    font-size: 25px;
+    padding: 10px;
 }
