@@ -25,7 +25,7 @@ const forecast = (longitude,latitude,callback) =>{
             humidity = body.current.humidity,
             minTemp=body.daily[0].temp.min,
             maxTemp=body.daily[0].temp.max,
-            str = 'Minimum Temperature of the day : '+minTemp+ ' , Maximum Temperature of the day : '+maxTemp+ ' , Current  Temperature :  '+temp+' , Humidity : '+ humidity +'% , Cloudiness : '+clouds+ '% , Summary : '+summary
+            str = 'Minimum Temperature of the day : '+minTemp+ '°C , Maximum Temperature of the day : '+maxTemp+ '°C , Current  Temperature :  '+temp+'°C , Humidity : '+ humidity +'% , Cloudiness : '+clouds+ '% , Summary : '+summary
             
             callback(undefined,str)
         }
