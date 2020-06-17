@@ -18,10 +18,16 @@ const forecast = (longitude,latitude,callback) =>{
             callback('Unable to find location',undefined)
         }
         else{
+            
             summary = body.current.weather[0].description,
             temp = body.current.temp ,
-            clouds = body.current.clouds
-            callback(undefined, summary+' .It is currently '+temp+' degress out . There is a '+clouds+'% chance of rain ')
+            clouds = body.current.clouds,
+            humidity = body.current.humidity,
+            minTemp=body.daily[0].temp.min,
+            maxTemp=body.daily[0].temp.max,
+            str = 'Current  Temperature :  '+temp+'   Minimum Temperature of the day : '+minTemp+ ' Maximum Temperature of the day : '+maxTemp+ ' Humidity : '+ humidity +'% Cloudiness : '+clouds+ '% Summary : '+summary
+            
+            callback(undefined,str)
         }
     })
 }
